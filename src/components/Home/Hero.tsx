@@ -2,7 +2,7 @@ import hero from "../../assets/images/hero.png"
 
 export function Hero() {
   return (
-    <main className="overflow-hidden md:flex md:justify-between">
+    <main className="overflow-hidden p-3 md:flex md:justify-between">
       <section className="container flex flex-col gap-6 px-2 text-white 
       md:px-4 lg:px-10 md:gap-8 ">
         <h1 className="text-5xl text-white font-bold w-4/5 
