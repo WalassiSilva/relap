@@ -10,7 +10,7 @@ export function Navbar() {
   }
   return (
     <>
-      <div className="flex justify-between text-white md:py-4">
+      <div className="flex justify-between text-white md:py-">
         <ul className="hidden w-full md:flex gap-5">
           <NavLinks src="home" />
           <NavLinks src="features" />

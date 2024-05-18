@@ -1,7 +1,7 @@
-import { Home as HomeComponent} from "../components/Home"
+import { HomeSection } from "../components/HomeSection";
 
 export function Home() {
   return (
-      <HomeComponent />
+    <HomeSection />
   )
 }
