@@ -1,5 +1,7 @@
+import { WorksSection } from "../components/WorksSection";
+
 export function Works() {
   return (
-    <div>Works</div>
+    <WorksSection />
   )
 }

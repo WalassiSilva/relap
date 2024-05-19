@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .work-card{
+    @apply hidden absolute left-5 bottom-5  flex-col gap-4 ;
+  }
+
+  .btn-work{
+    @apply mr-6 focus:text-slate-800 focus:font-bold active:text-slate-800 hover:text-slate-800 hover:font-bold ;
+  }
+}
