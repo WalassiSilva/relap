@@ -48,7 +48,7 @@ export function WorksSection() {
           </div>
 
         </div>
-        <div className="self-center my-10"><button className="bg-[#c86dd7] text-white font-semibold rounded-full px-10 py-2">All Works</button></div>
+        <div className="self-center my-10"><button className="bg-[#c86dd7] hover:bg-[#993ea7] text-white font-semibold rounded-full px-10 py-2">All Works</button></div>
       </div>
     </section>
   )
