@@ -5,12 +5,11 @@ import work3 from "../../assets/images/works/work3.png"
 
 export function WorksSection() {
   return (
-    <section className="flex flex-col px-4 py-16 md:px-[10%] bg-[#FDF2FF]">
-
+    <section className="wrapper bg-[#FDF2FF]">
       <h5 className="text-lg font-bold text-slate-800 mb-6 md:mb-10 ">NISI UT ALIQUID</h5>
       <div className="lg:flex ">
         <article className="lg:w-1/2 self-start">
-          <h3 className="text-4xl font-bold text-slate-800 mb-10">Ullam corporis <br />suscipit</h3>
+          <h3 className="title">Ullam corporis <br />suscipit</h3>
         </article>
         <article className="lg:w-1/2">
           <p className="text-neutral-500">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>

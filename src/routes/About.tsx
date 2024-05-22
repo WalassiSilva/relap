@@ -1,6 +1,7 @@
+import { AboutSection } from "../components/AboutSection";
 
 export function About() {
   return (
-    <div>About</div>
+    <AboutSection />
   )
 }
