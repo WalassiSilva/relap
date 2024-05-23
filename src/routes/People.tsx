@@ -1,5 +1,7 @@
+import { PeopleSection } from "../components/PeopleSection";
+
 export function People() {
   return (
-    <div>People</div>
+    <PeopleSection />
   )
 }
