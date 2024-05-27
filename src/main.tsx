@@ -10,6 +10,7 @@ import { Works } from './routes/Works.tsx'
 import { About } from './routes/About.tsx'
 import { People } from './routes/People.tsx'
 import { News } from './routes/News.tsx'
+import { Feedbacks } from './routes/Feedbacks.tsx'
 
 
 const router = createBrowserRouter([
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
       {
         path: "/people",
         element: <People />
+      },
+      {
+        path: "/feedbacks",
+        element: <Feedbacks />
       },
       {
         path: "/news",

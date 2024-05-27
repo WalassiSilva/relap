@@ -1,5 +1,7 @@
+import { NewsSection } from "../components/NewsSection";
+
 export function News() {
   return (
-    <div>News</div>
+    <NewsSection />
   )
 }

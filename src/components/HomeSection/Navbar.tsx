@@ -17,6 +17,7 @@ export function Navbar() {
           <NavLinks src="works" />
           <NavLinks src="about" />
           <NavLinks src="people" />
+          <NavLinks src="feedbacks" />
           <NavLinks src="news" />
           <button className="ml-32 px-10 py-1 rounded-full border border-zinc-500 hover:border-pink-500  ">Contact Us</button>
         </ul>
@@ -34,6 +35,7 @@ export function Navbar() {
               <NavLinks src="works" clicked={toggleNavbar} />
               <NavLinks src="about" clicked={toggleNavbar} />
               <NavLinks src="people" clicked={toggleNavbar} />
+              <NavLinks src="feedbacks" clicked={toggleNavbar} />
               <NavLinks src="news" clicked={toggleNavbar} />
               <button onClick={toggleNavbar}
               className="hover:text-white rounded-lg p-1 hover:bg-pink-500">Contact Us</button>
