@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+html{
+  scroll-behavior: smooth;
+  -webkit-scroll-behavior: smooth;
+}
+
 @layer components {
   .wrapper{
     @apply flex flex-col px-4 py-16 md:px-[10%]

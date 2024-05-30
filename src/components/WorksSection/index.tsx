@@ -6,7 +6,7 @@ import { TypeId } from "../../types";
 
 export function WorksSection({id}:TypeId) {
   return (
-    <section id={id} className="wrapper bg-[#FDF2FF]">
+    <section id={id} className="wrapper bg-[#FDF2FF] md:scroll-mt-[56px] min-h-dvh">
       <h5 className="text-lg font-bold text-slate-800 mb-6 md:mb-10 ">NISI UT ALIQUID</h5>
       <div className="lg:flex ">
         <article className="lg:w-1/2 self-start">

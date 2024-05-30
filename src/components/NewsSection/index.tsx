@@ -3,9 +3,9 @@ import { TypeId } from "../../types";
 
 export function NewsSection({id}:TypeId) {
   return (
-    <div id={id} className="min-h-[calc(100dvh-56px)] bg-[#fdf2ff] flex flex-col py-10 
+    <div id={id} className="min-h-dvh bg-[#fdf2ff] flex flex-col py-10 
     md:flex-row md:items-center md:justify-between 
-    md:px-[10%] lg:px-[18%]">
+    md:px-[10%] lg:px-[18%] md:pt-20">
       <section className="flex flex-col gap-6 px-4 md:max-w-md ">
         <h5 className="font-bold text-slate-800">Nisi ut aliquid</h5>
         <h2 className="title mb-0">Omnis voluptas

@@ -4,8 +4,8 @@ import { TypeId } from "../../types";
 
 export function ContactsSection({id}:TypeId) {
   return (
-    <div id={id} className="bg-contact bg-fit p-4 md:h-[calc(100dvh-56px)]">
-      <div className="md:flex md:flex-col md:justify-between md:h-full">
+    <div id={id} className="bg-contact bg-fit p-4 min-h-dvh  md:pt-10">
+      <div className="md:flex md:flex-col md:justify-between md:h-full md:gap-20">
         <div className="md:flex md:flex-col md:justify-center md:h-full">
           <h2 className="text-5xl font-bold font-title text-slate-800 py-8 text-center">Contact Us</h2>
           <p className="font-semibold text-slate-800 text-center pb-4 md:max-w-[50%] mx-auto">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas.</p>
