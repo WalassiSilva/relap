@@ -11,6 +11,7 @@ export default {
       },
       backgroundImage: {
         home: "url('./assets/images/home.png')",
+        contact: "url('./assets/images/contact/bg.png')",
       }
     },
   },

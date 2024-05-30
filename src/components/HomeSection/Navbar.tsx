@@ -2,6 +2,7 @@
 import { FaBars, FaTimes } from "react-icons/fa";
 import { NavLinks } from "./NavLinks";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,7 +20,7 @@ export function Navbar() {
           <NavLinks src="people" />
           <NavLinks src="feedbacks" />
           <NavLinks src="news" />
-          <button className="ml-32 px-10 py-1 rounded-full border border-zinc-500 hover:border-pink-500  ">Contact Us</button>
+          <Link to="/contacts" className="ml-32 px-10 py-1 rounded-full border border-zinc-500 hover:border-pink-500  ">Contact Us</Link>
         </ul>
         <div className="md:hidden">
           <button className="" onClick={toggleNavbar}>{!isOpen ? <FaBars className="size-6 text-pink-400" /> : <FaTimes className="text-pink-400 size-6" />}</button>
@@ -37,8 +38,8 @@ export function Navbar() {
               <NavLinks src="people" clicked={toggleNavbar} />
               <NavLinks src="feedbacks" clicked={toggleNavbar} />
               <NavLinks src="news" clicked={toggleNavbar} />
-              <button onClick={toggleNavbar}
-              className="hover:text-white rounded-lg p-1 hover:bg-pink-500">Contact Us</button>
+              <Link to="/contacts" onClick={toggleNavbar}
+              className="hover:text-white rounded-lg p-1 hover:bg-pink-500">Contact Us</Link>
             </ul>
           </div>
         </nav>
