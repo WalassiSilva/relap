@@ -1,7 +1,9 @@
-import img1 from "../../assets/images/people/1.png"
-export function PeopleSection() {
+import img1 from "../../assets/images/people/1.png";
+import { TypeId } from "../../types";
+
+export function PeopleSection({id}:TypeId) {
   return (
-    <main className=" relative bg-[#3023AE] text-white overflow-hidden md:flex md:py-2 md:justify-around md:items-center md:h-[calc(100dvh-56px)]">
+    <main id={id} className=" relative bg-[#3023AE] text-white overflow-hidden md:flex md:py-2 md:justify-around md:items-center md:h-[calc(100dvh-56px)]">
       <section className="md:w-1/3">
         <img src={img1} alt="network image" />
       </section>

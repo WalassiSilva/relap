@@ -1,9 +1,10 @@
 import { FaFacebookF, FaTwitter } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
+import { TypeId } from "../../types";
 
-export function ContactsSection() {
+export function ContactsSection({id}:TypeId) {
   return (
-    <div className="bg-contact bg-fit p-4 md:h-[calc(100dvh-56px)]">
+    <div id={id} className="bg-contact bg-fit p-4 md:h-[calc(100dvh-56px)]">
       <div className="md:flex md:flex-col md:justify-between md:h-full">
         <div className="md:flex md:flex-col md:justify-center md:h-full">
           <h2 className="text-5xl font-bold font-title text-slate-800 py-8 text-center">Contact Us</h2>

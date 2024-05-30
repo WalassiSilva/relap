@@ -3,7 +3,7 @@ import { FeedbacksSection } from "../components/FeedbacksSection";
 export function Feedbacks () {
   return (
     <>
-      <FeedbacksSection />
+      <FeedbacksSection id="feedbacks"/>
     </>
   )
 }

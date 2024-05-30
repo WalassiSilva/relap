@@ -3,10 +3,11 @@ import { FeedbackCard } from "./FeedbackCard";
 import { FaReact } from "react-icons/fa";
 import { SiVite,SiTypescript } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
+import { TypeId } from "../../types";
 
-export function FeedbacksSection() {
+export function FeedbacksSection({id}:TypeId) {
   return (
-    <main className="h-[calc(100dvh-56px)] bg-slate-50 flex flex-col gap-6 px-4 justify-around items-center text-center">
+    <main id={id} className="md:h-[calc(100dvh-56px)] bg-slate-50 flex flex-col gap-6 px-4 justify-around items-center text-center">
       <h2 className="title ">Officis debitis</h2>
       <p className="font-semibold max-w-2xl">Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repella.</p>
 

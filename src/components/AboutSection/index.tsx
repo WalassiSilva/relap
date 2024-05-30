@@ -1,7 +1,9 @@
-import aboutImgs from "../../assets/images/about"
-export function AboutSection() {
+import aboutImgs from "../../assets/images/about";
+import { TypeId } from "../../types";
+
+export function AboutSection({id}:TypeId) {
   return (
-    <main className=" min-h-[calc(100dvh-56px)] py-4 relative  overflow-hidden flex flex-col items-center justify-center lg:justify-evenly bg-white ">
+    <main id={id} className=" min-h-[calc(100dvh-56px)] py-4 relative  overflow-hidden flex flex-col items-center justify-center lg:justify-evenly bg-white ">
       <div className="flex flex-col justify-center items-center text-center mb-10">
         <h3 className="title ">Fugiat quo</h3>
         <p className="font-semibold min-w-72 max-w-xl px-4 md:px-8">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>

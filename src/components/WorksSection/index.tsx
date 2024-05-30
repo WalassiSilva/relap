@@ -1,11 +1,12 @@
-import work1 from "../../assets/images/works/work1.png"
-import work2 from "../../assets/images/works/work2.png"
-import work3 from "../../assets/images/works/work3.png"
+import work1 from "../../assets/images/works/work1.png";
+import work2 from "../../assets/images/works/work2.png";
+import work3 from "../../assets/images/works/work3.png";
+import { TypeId } from "../../types";
 
 
-export function WorksSection() {
+export function WorksSection({id}:TypeId) {
   return (
-    <section className="wrapper bg-[#FDF2FF]">
+    <section id={id} className="wrapper bg-[#FDF2FF]">
       <h5 className="text-lg font-bold text-slate-800 mb-6 md:mb-10 ">NISI UT ALIQUID</h5>
       <div className="lg:flex ">
         <article className="lg:w-1/2 self-start">
