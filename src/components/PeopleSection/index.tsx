@@ -15,7 +15,7 @@ export function PeopleSection({id}:TypeId) {
         <div className="z-50"><button className="bg-[#ffc300] hover:bg-[#c59b27] rounded-full px-8 py-2 font-semibold ">Our team</button></div>
       </section>
 
-      <div className="absolute bg-gradient-to-r to-[#3023ae] from-[#c86dd7] size-12 rounded-full -top-7 -right-5 md:-top-5 md:left-[30%]"></div>
+      <div className="absolute bg-gradient-to-r to-[#3023ae] from-[#c86dd7] size-12 rounded-full -top-7 -right-[22px] md:-top-5 md:left-[30%]"></div>
       <div className="absolute bg-gradient-to-r to-[#3023ae] from-[#c86dd7] size-24 rounded-full -bottom-14 -right-10 md:left-[45%] "></div>
       <div className="absolute bg-gradient-to-r to-[#3023ae] from-[#c86dd7] size-80 rounded-full -bottom-56 -left-36 md:-bottom-36 "></div>
       
