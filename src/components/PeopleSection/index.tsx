@@ -1,7 +1,9 @@
-import img1 from "../../assets/images/people/1.png"
-export function PeopleSection() {
+import img1 from "../../assets/images/people/1.png";
+import { TypeId } from "../../types";
+
+export function PeopleSection({id}:TypeId) {
   return (
-    <main className=" relative bg-[#3023AE] text-white overflow-hidden md:flex md:py-2 md:justify-around md:items-center md:h-[calc(100dvh-56px)]">
+    <main id={id} className=" relative bg-[#3023AE] text-white overflow-hidden md:flex md:py-2 md:justify-around md:items-center min-h-dvh">
       <section className="md:w-1/3">
         <img src={img1} alt="network image" />
       </section>
@@ -13,7 +15,7 @@ export function PeopleSection() {
         <div className="z-50"><button className="bg-[#ffc300] hover:bg-[#c59b27] rounded-full px-8 py-2 font-semibold ">Our team</button></div>
       </section>
 
-      <div className="absolute bg-gradient-to-r to-[#3023ae] from-[#c86dd7] size-12 rounded-full -top-7 -right-5 md:-top-5 md:left-[30%]"></div>
+      <div className="absolute bg-gradient-to-r to-[#3023ae] from-[#c86dd7] size-12 rounded-full -top-7 -right-[22px] md:-top-5 md:left-[30%]"></div>
       <div className="absolute bg-gradient-to-r to-[#3023ae] from-[#c86dd7] size-24 rounded-full -bottom-14 -right-10 md:left-[45%] "></div>
       <div className="absolute bg-gradient-to-r to-[#3023ae] from-[#c86dd7] size-80 rounded-full -bottom-56 -left-36 md:-bottom-36 "></div>
       

@@ -1,16 +1,17 @@
 import { FaFacebookF, FaTwitter } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
+import { TypeId } from "../../types";
 
-export function ContactsSection() {
+export function ContactsSection({id}:TypeId) {
   return (
-    <div className="bg-contact bg-fit p-4 md:h-[calc(100dvh-56px)]">
-      <div className="md:flex md:flex-col md:justify-between md:h-full">
+    <div id={id} className="bg-contact bg-fit p-4 min-h-dvh  md:pt-10">
+      <div className="md:flex md:flex-col md:justify-between md:h-full md:gap-20">
         <div className="md:flex md:flex-col md:justify-center md:h-full">
           <h2 className="text-5xl font-bold font-title text-slate-800 py-8 text-center">Contact Us</h2>
-          <p className="font-semibold text-slate-800 text-center pb-4 md:max-w-[40%] mx-auto">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas.</p>
-          <div className="flex flex-col gap-4  pb-10 md:flex-row md:justify-center md:self-center md:w-[40%]  ">
+          <p className="font-semibold text-slate-800 text-center pb-4 md:max-w-[50%] mx-auto">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas.</p>
+          <div className="flex flex-col gap-4 pb-10 md:flex-row md:justify-center md:self-center md:w-[50%]  ">
             <input type="text" placeholder="Your email"
-              className="border rounded placeholder:px-4 placeholder:py-2 placeholder:text-sm md:w-full" />
+              className="border rounded py-2 px-4 placeholder:text-sm md:w-full" />
             <div className="text-center"><button className="bg-[#C86DD7] px-16 py-3 rounded-full text-white font-semibold">Send</button></div>
           </div>
         </div>

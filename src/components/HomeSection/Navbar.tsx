@@ -1,8 +1,5 @@
-
 import { FaBars, FaTimes } from "react-icons/fa";
-import { NavLinks } from "./NavLinks";
 import { useState } from "react";
-import { Link } from "react-router-dom";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,16 +8,16 @@ export function Navbar() {
   }
   return (
     <>
-      <div className="flex justify-between text-white md:py-">
+      <div className="flex justify-between text-white ">
         <ul className="hidden w-full md:flex gap-5">
-          <NavLinks src="home" />
-          <NavLinks src="features" />
-          <NavLinks src="works" />
-          <NavLinks src="about" />
-          <NavLinks src="people" />
-          <NavLinks src="feedbacks" />
-          <NavLinks src="news" />
-          <Link to="/contacts" className="ml-32 px-10 py-1 rounded-full border border-zinc-500 hover:border-pink-500  ">Contact Us</Link>
+          <a href="#home">Home</a>
+          <a href="#features">Features</a>
+          <a href="#works">Works</a>
+          <a href="#about">About</a>
+          <a href="#people">People</a>
+          <a href="#feedbacks">Feedbacks</a>
+          <a href="#news">News</a>
+          <a href="#contacts" className="ml-32 px-10 py-1 rounded-full border border-zinc-500 hover:border-pink-500  ">Contacts Us</a>
         </ul>
         <div className="md:hidden">
           <button className="" onClick={toggleNavbar}>{!isOpen ? <FaBars className="size-6 text-pink-400" /> : <FaTimes className="text-pink-400 size-6" />}</button>
@@ -28,18 +25,17 @@ export function Navbar() {
       </div >
 
       {isOpen && (
-        <nav  className="md:hidden relative flex basis-full flex-col items-end">
+        <nav className="md:hidden relative flex basis-full flex-col items-end z-50">
           <div className=" absolute bg-white p-2 rounded-xl rounded-tr-none border shadow text-black flex  flex-col items-end">
-            <ul className=" flex flex-col items-center gap-5">
-              <NavLinks src="home" clicked={toggleNavbar} />
-              <NavLinks src="features" clicked={toggleNavbar} />
-              <NavLinks src="works" clicked={toggleNavbar} />
-              <NavLinks src="about" clicked={toggleNavbar} />
-              <NavLinks src="people" clicked={toggleNavbar} />
-              <NavLinks src="feedbacks" clicked={toggleNavbar} />
-              <NavLinks src="news" clicked={toggleNavbar} />
-              <Link to="/contacts" onClick={toggleNavbar}
-              className="hover:text-white rounded-lg p-1 hover:bg-pink-500">Contact Us</Link>
+            <ul className=" flex flex-col items-center gap-5 ">
+              <a href="#home" onClick={toggleNavbar} className="hover:outline rounded-full px-1 outline-pink-400 outline-1 font-semibold">Home</a>
+              <a href="#features" onClick={toggleNavbar} className="hover:outline rounded-full px-1 outline-pink-400 outline-1 font-semibold">Features</a>
+              <a href="#works" onClick={toggleNavbar} className="hover:outline rounded-full px-1 outline-pink-400 outline-1 font-semibold">Works</a>
+              <a href="#about" onClick={toggleNavbar} className="hover:outline rounded-full px-1 outline-pink-400 outline-1 font-semibold">About</a>
+              <a href="#people" onClick={toggleNavbar} className="hover:outline rounded-full px-1 outline-pink-400 outline-1 font-semibold">People</a>
+              <a href="#feedbacks" onClick={toggleNavbar} className="hover:outline rounded-full px-1 outline-pink-400 outline-1 font-semibold">Feedbacks</a>
+              <a href="#news" onClick={toggleNavbar} className="hover:outline rounded-full px-1 outline-pink-400 outline-1 font-semibold">News</a>
+              <a href="#contacts" onClick={toggleNavbar} className="md:ml-32 w-40 text-center px-8 py-1 rounded-full border border-zinc-500 hover:border-pink-500 font-bold ">Contacts Us</a>
             </ul>
           </div>
         </nav>

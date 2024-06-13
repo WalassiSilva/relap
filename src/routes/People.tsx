@@ -2,6 +2,6 @@ import { PeopleSection } from "../components/PeopleSection";
 
 export function People() {
   return (
-    <PeopleSection />
+    <PeopleSection id="people" />
   )
 }

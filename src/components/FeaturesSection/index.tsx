@@ -2,13 +2,11 @@ import { FaPlayCircle } from "react-icons/fa";
 
 import painting from "../../assets/images/painting.png"
 import { Accordion } from "./Accordion";
+import { TypeId } from "../../types";
 
-export function FeaturesSection() {
-
-
-
+export function FeaturesSection({id}:TypeId) {
   return (
-    <section className="bg-white px-4 py-6 md:flex md:items-center md:justify-center ">
+    <section id={id} className="bg-white px-4 py-6 md:flex md:items-center md:justify-center md:scroll-mt-[56px]  min-h-dvh">
       <article className="pr-0 md:pl-[10%] flex flex-col gap-5 w-full">
         <div className="md:pt-6 ">
           <h5 className="text-lg font-bold uppercase font-title text-gray-800">Quis autem</h5>
